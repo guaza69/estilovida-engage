@@ -2,8 +2,9 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Menu, X, MessageCircle } from "lucide-react";
+import logoEyv from "@/assets/logo-eyv.png";
 
-const WHATSAPP_LINK = "https://wa.me/573001234567?text=Hola,%20me%20interesa%20conocer%20más%20sobre%20sus%20programas%20de%20bienestar%20empresarial";
+const WHATSAPP_LINK = "https://api.whatsapp.com/send?phone=573016905221&text=Hola,%20me%20interesa%20conocer%20más%20sobre%20sus%20programas%20de%20bienestar%20empresarial";
 
 const navItems = [
   { label: "Servicios", href: "#programas" },
@@ -43,14 +44,12 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2">
-            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-hero">
-              <span className="text-lg font-bold text-primary-foreground">E</span>
-            </div>
-            <div>
-              <span className="font-bold text-foreground">Estilo y Vida</span>
-              <span className="block text-xs text-muted-foreground">Bienestar Empresarial</span>
-            </div>
+          <a href="#" className="flex items-center gap-3">
+            <img 
+              src={logoEyv} 
+              alt="Estilo y Vida Logo" 
+              className="h-12 w-auto object-contain"
+            />
           </a>
 
           {/* Desktop nav */}

@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { MessageCircle, Phone, Mail } from "lucide-react";
 import characterAdvisor from "@/assets/character-advisor.jpeg";
 
-const WHATSAPP_LINK = "https://wa.me/573001234567?text=Hola,%20me%20interesa%20agendar%20una%20asesoría%20personalizada%20para%20mi%20empresa";
+const WHATSAPP_LINK = "https://api.whatsapp.com/send?phone=573016905221&text=Hola,%20me%20interesa%20agendar%20una%20asesoría%20personalizada%20para%20mi%20empresa";
 
 const CTASection = () => {
   return (
@@ -109,7 +109,7 @@ const CTASection = () => {
             >
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Phone className="h-4 w-4 text-primary" />
-                <span>+57 300 123 4567</span>
+                <span>+57 301 690 5221</span>
               </div>
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Mail className="h-4 w-4 text-primary" />
