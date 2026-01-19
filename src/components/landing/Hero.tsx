@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { MessageCircle, ArrowRight } from "lucide-react";
-import characterWelcome from "@/assets/character-welcome.jpeg";
+import characterWelcome from "@/assets/character-welcome.png";
 
 const WHATSAPP_LINK = "https://api.whatsapp.com/send?phone=573016905221&text=Hola,%20me%20interesa%20conocer%20más%20sobre%20sus%20programas%20de%20bienestar%20empresarial";
 
