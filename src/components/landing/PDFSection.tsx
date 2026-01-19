@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 import { FileText } from "lucide-react";
 
 const PDFSection = () => {
-  // Placeholder PDF URL - replace with actual PDF URL
-  const pdfUrl = "https://www.w3.org/WAI/WCAG21/Techniques/pdf/img/table-word.jpg";
+  // Google Drive PDF URL - converted to embed format
+  const pdfUrl = "https://drive.google.com/file/d/1CVjuM9eVRGUKq3SxPxEl0f1NbKPofvwU/preview";
   
   return (
     <section className="bg-background py-20">
@@ -34,28 +34,18 @@ const PDFSection = () => {
           transition={{ delay: 0.2, duration: 0.6 }}
           className="mx-auto max-w-4xl"
         >
-          <div className="overflow-hidden rounded-2xl bg-card shadow-card">
-            <div className="flex items-center gap-3 border-b border-border bg-muted/50 px-6 py-4">
+          <div className="overflow-hidden rounded-2xl shadow-lg">
+            <div className="flex items-center gap-3 border-b border-border bg-primary/10 px-6 py-4">
               <FileText className="h-5 w-5 text-primary" />
               <span className="font-medium text-foreground">Catálogo Estilo y Vida - Bienestar Empresarial</span>
             </div>
-            <div className="aspect-[4/3] bg-muted/30 p-4">
-              {/* PDF Embed placeholder - replace with actual PDF embed */}
-              <div className="flex h-full flex-col items-center justify-center rounded-lg border-2 border-dashed border-border">
-                <FileText className="mb-4 h-16 w-16 text-muted-foreground/50" />
-                <p className="mb-2 text-lg font-medium text-muted-foreground">Catálogo de Servicios</p>
-                <p className="text-sm text-muted-foreground/70">
-                  El PDF se visualizará aquí una vez configurado
-                </p>
-                {/* 
-                  Para embeber un PDF real, reemplaza este div con:
-                  <iframe 
-                    src="URL_DEL_PDF#toolbar=0" 
-                    className="h-full w-full rounded-lg" 
-                    title="Catálogo de Servicios"
-                  />
-                */}
-              </div>
+            <div className="aspect-[4/3]">
+              <iframe 
+                src={pdfUrl}
+                className="h-full w-full" 
+                title="Catálogo de Servicios"
+                allow="autoplay"
+              />
             </div>
           </div>
         </motion.div>
